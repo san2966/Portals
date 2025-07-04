@@ -1,0 +1,115 @@
+[debug] [2025-07-04T06:12:12.658Z] ----------------------------------------------------------------------
+[debug] [2025-07-04T06:12:12.664Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sanke\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-07-04T06:12:12.665Z] CLI Version:   14.9.0
+[debug] [2025-07-04T06:12:12.666Z] Platform:      win32
+[debug] [2025-07-04T06:12:12.666Z] Node Version:  v20.19.2
+[debug] [2025-07-04T06:12:12.666Z] Time:          Fri Jul 04 2025 11:42:12 GMT+0530 (India Standard Time)
+[debug] [2025-07-04T06:12:12.666Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-04T06:12:12.680Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-04T06:12:12.681Z] > authorizing via signed-in user (sanketbhoslevmcc@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\sanke\OneDrive\Desktop\VMCC\Portal\HR portal
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-07-04T06:12:38.396Z] Checked if tokens are valid: true, expires at: 1751611169791
+[debug] [2025-07-04T06:12:38.397Z] Checked if tokens are valid: true, expires at: 1751611169791
+[debug] [2025-07-04T06:12:38.401Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-07-04T06:12:39.169Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-07-04T06:12:39.170Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project vmcc-hr (VMCC-HR) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-07-04T06:12:40.244Z] Checked if tokens are valid: true, expires at: 1751611169791
+[debug] [2025-07-04T06:12:40.244Z] Checked if tokens are valid: true, expires at: 1751611169791
+[debug] [2025-07-04T06:12:40.245Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/vmcc-hr/billingInfo [none]
+[debug] [2025-07-04T06:12:41.653Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/vmcc-hr/billingInfo 200
+[debug] [2025-07-04T06:12:41.653Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/vmcc-hr/billingInfo {"name":"projects/vmcc-hr/billingInfo","projectId":"vmcc-hr","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-07-04T06:12:41.656Z] Checked if tokens are valid: true, expires at: 1751611169791
+[debug] [2025-07-04T06:12:41.656Z] Checked if tokens are valid: true, expires at: 1751611169791
+[debug] [2025-07-04T06:12:41.657Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/vmcc-hr/locations/-/services [none]
+[debug] [2025-07-04T06:12:43.549Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/vmcc-hr/locations/-/services 200
+[debug] [2025-07-04T06:12:43.550Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/vmcc-hr/locations/-/services {}
+[info] i  dataconnect\dataconnect.yaml is unchanged 
+[info] i  dataconnect\schema\schema.gql is unchanged 
+[info] +  Wrote dataconnect\connector\connector.yaml 
+[info] i  dataconnect\connector\queries.gql is unchanged 
+[info] i  dataconnect\connector\mutations.gql is unchanged 
+[info] +  Detected WEB app in directory C:\Users\sanke\OneDrive\Desktop\VMCC\Portal\HR portal 
+[info] i  Detected react app. Enabling react generated SDKs. 
+[info] i  Writing your new SDK configuration to C:\Users\sanke\OneDrive\Desktop\VMCC\Portal\HR portal\dataconnect\connector/connector.yaml 
+[info] +  Wrote dataconnect\connector\connector.yaml 
+[debug] [2025-07-04T06:12:49.086Z] defaultcredentials: writing to file C:\Users\sanke\AppData\Roaming\firebase\sanketbhoslevmcc_gmail_com_application_default_credentials.json
+[info] I0704 11:42:49.257694   15388 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\sanke\\OneDrive\\Desktop\\VMCC\\Portal\\HR portal\\dataconnect-generated\\js\\default-connector"
+I0704 11:42:49.272662   15388 generate.go:40] Generated all sources. Writing them to disk...
+I0704 11:42:49.281636   15388 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\sanke\\OneDrive\\Desktop\\VMCC\\Portal\\HR portal\\dataconnect-generated\\js\\default-connector"
+Generated sources: index.d.ts [246B] package.json [860B] README.md [2896B] react\index.cjs.js [0B] react\esm\index.esm.js [0B] esm\index.esm.js [111B] esm\package.json [17B] index.cjs.js [146B] react\index.d.ts [228B] react\package.json [468B] react\esm\package.json [17B] react\README.md [5474B] 
+I0704 11:42:49.294022   15388 installsdk.go:55] Package @firebasegen/default-connector is already installed. Skipping installation
+
+[info] i  Generated SDK code for default 
+[info] i  Visit https://firebase.google.com/docs/data-connect/web-sdk#react for more information on how to set up React Generated SDKs for Firebase Data Connect 
+[info] +  If you'd like to add more generated SDKs to your app your later, run firebase init dataconnect:sdk again 
+[info] i  If you'd like to provision a CloudSQL Postgres instance on the Firebase Data Connect no-cost trial:
+1. Please upgrade to the pay-as-you-go (Blaze) billing plan. Visit the following page:
+     https://console.firebase.google.com/project/vmcc-hr/usage/details
+2. Run firebase init dataconnect again to configure the Cloud SQL instance.
+3. Run firebase deploy --only dataconnect to deploy your Data Connect service. 
+[info] 
+=== Hosting Setup
+[debug] [2025-07-04T06:12:49.302Z] Checked if tokens are valid: true, expires at: 1751611169791
+[debug] [2025-07-04T06:12:49.302Z] Checked if tokens are valid: true, expires at: 1751611169791
+[debug] [2025-07-04T06:12:49.303Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vmcc-hr [none]
+[debug] [2025-07-04T06:12:49.784Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vmcc-hr 200
+[debug] [2025-07-04T06:12:49.784Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vmcc-hr {"projectId":"vmcc-hr","projectNumber":"439006203059","displayName":"VMCC-HR","name":"projects/vmcc-hr","resources":{"hostingSite":"vmcc-hr"},"state":"ACTIVE","etag":"1_4b472cae-e575-46bf-a688-862d6145463c"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2025-07-04T06:13:04.599Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-07-04T06:13:04.648Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2025-07-04T06:13:04.648Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.10.0","browserURL":"https://www.gstatic.com/firebasejs/11.10.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.10.0/firebase.tgz"},"live":{"version":"11.10","browserURL":"https://www.gstatic.com/firebasejs/live/11.10/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.10/firebase.tgz"},"components":{"ai":"https://www.gstatic.com/firebasejs/11.10.0/firebase-ai.js","analytics":"https://www.gstatic.com/firebasejs/11.10.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.10.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.10.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.10.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.10.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.10.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.10.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.10.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.10.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.10.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.10.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.10.0/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.10.0/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.10.0/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\sanke\OneDrive\Desktop\VMCC\Portal\HR portal is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=919828951&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-07-04T06:13:24.178Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2025-07-04T06:13:24.178Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2025-07-04T06:13:24.555Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2025-07-04T06:13:24.555Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2025-07-04T06:13:24.573Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2025-07-04T06:13:24.968Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2025-07-04T06:13:24.969Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"san2966","id":42144376,"node_id":"MDQ6VXNlcjQyMTQ0Mzc2","avatar_url":"https://avatars.githubusercontent.com/u/42144376?v=4","gravatar_id":"","url":"https://api.github.com/users/san2966","html_url":"https://github.com/san2966","followers_url":"https://api.github.com/users/san2966/followers","following_url":"https://api.github.com/users/san2966/following{/other_user}","gists_url":"https://api.github.com/users/san2966/gists{/gist_id}","starred_url":"https://api.github.com/users/san2966/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/san2966/subscriptions","organizations_url":"https://api.github.com/users/san2966/orgs","repos_url":"https://api.github.com/users/san2966/repos","events_url":"https://api.github.com/users/san2966/events{/privacy}","received_events_url":"https://api.github.com/users/san2966/received_events","type":"User","user_view_type":"private","site_admin":false,"name":"sanket bhosale","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":21,"public_gists":0,"followers":0,"following":0,"created_at":"2018-08-06T13:07:42Z","updated_at":"2025-07-01T08:40:44Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":18701,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as san2966 
+[info] 
+[debug] [2025-07-04T06:13:48.386Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-07-04T06:13:48.681Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2025-07-04T06:13:48.681Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
